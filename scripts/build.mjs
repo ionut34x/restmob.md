@@ -109,6 +109,10 @@ function render(lang) {
   <link rel="stylesheet" href="${css}">
   <script type="application/ld+json">${schema(lang, t, url)}</script>
   <script src="${js}" defer></script>
+  <script>
+    window.va = window.va || function() { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body id="sus">
   <a class="skip-link" href="#continut">${t.skip}</a>
@@ -189,6 +193,6 @@ await writeFile(path.join(publicDir, 'sitemap.xml'), `<?xml version="1.0" encodi
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 ${['/', '/ru/'].map(page => `<url><loc>${site.url}${page}</loc><xhtml:link rel="alternate" hreflang="ro" href="${site.url}/"/><xhtml:link rel="alternate" hreflang="ru" href="${site.url}/ru/"/><xhtml:link rel="alternate" hreflang="x-default" href="${site.url}/"/>${sitemapPhotos.map(slug => `<image:image><image:loc>${site.url}/assets/images/${images.get(slug).variants.at(-1).file}</image:loc></image:image>`).join('')}</url>`).join('\n')}
 </urlset>\n`);
-await writeFile(path.join(publicDir, '404.html'), `<!doctype html><html lang="ro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>404 — RESTMOB</title><link rel="icon" href="/assets/favicon.svg"><link rel="stylesheet" href="${css}"></head><body><main class="not-found container"><a class="brand" href="/"><span class="brand-name">RESTMOB.</span></a><p class="eyebrow">404</p><h1>${copy.ro.notFound}</h1><p lang="ru">${copy.ru.notFound}</p><a class="button button-primary" href="/">${copy.ro.backHome}${arrow}</a><a class="text-link" lang="ru" href="/ru/">${copy.ru.backHome}${arrow}</a></main></body></html>`);
+await writeFile(path.join(publicDir, '404.html'), `<!doctype html><html lang="ro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>404 — RESTMOB</title><link rel="icon" href="/assets/favicon.svg"><link rel="stylesheet" href="${css}"><script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments);};</script><script defer src="/_vercel/insights/script.js"></script></head><body><main class="not-found container"><a class="brand" href="/"><span class="brand-name">RESTMOB.</span></a><p class="eyebrow">404</p><h1>${copy.ro.notFound}</h1><p lang="ru">${copy.ru.notFound}</p><a class="button button-primary" href="/">${copy.ro.backHome}${arrow}</a><a class="text-link" lang="ru" href="/ru/">${copy.ru.backHome}${arrow}</a></main></body></html>`);
 console.log('Built: public/index.html, public/ru/index.html, 404.html, sitemap.xml, robots.txt.');
 console.log(`Assets: ${css}, ${js}. No runtime dependencies.`);

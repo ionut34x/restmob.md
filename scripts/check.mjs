@@ -135,6 +135,8 @@ for (const [lang, relative] of [['ro', 'index.html'], ['ru', 'ru/index.html']]) 
     verify(resources.length > 0, `${label}: missing ${extension} resource`);
     for (const element of resources) {
       const url = element.attrs[attribute];
+      // Allow Vercel Analytics script as a special case
+      if (url === '/_vercel/insights/script.js') continue;
       const hash = url.match(new RegExp(`\\.([a-f0-9]{10})\\.${extension}$`))?.[1];
       verify(Boolean(hash), `${label}: ${extension} must have a fingerprinted filename: ${url}`);
       const asset = path.join(publicDir, url.replace(/^\//, ''));
@@ -157,7 +159,10 @@ for (const page of pages) {
       catch { verify(false, `${page.lang}: invalid ${key} URL ${reference}`); continue; }
       if (url.origin !== origin) continue;
       const destination = resourcePath(url);
-      verify(Boolean(destination) && await exists(destination), `${page.lang}: broken local ${key} ${reference}`);
+      // Allow Vercel Analytics script as a special case
+      if (reference !== '/_vercel/insights/script.js') {
+        verify(Boolean(destination) && await exists(destination), `${page.lang}: broken local ${key} ${reference}`);
+      }
       if (url.hash && destination) {
         const destinationPage = pages.find(candidate => candidate.file === destination);
         if (destinationPage) verify(destinationPage.idSet.has(decodeURIComponent(url.hash.slice(1))), `${page.lang}: missing anchor target ${reference}`);

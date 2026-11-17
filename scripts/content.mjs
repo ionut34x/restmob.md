@@ -1,5 +1,5 @@
 export const site = {
-  url: 'https://restmob.2bd.net',
+  url: 'https://restmobmd.vercel.app',
   phone: '+37368122935',
   phoneDisplay: '068 122 935',
   whatsapp: 'https://wa.me/37368122935',

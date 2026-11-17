@@ -1,0 +1,946 @@
+{
+  "source_images_available": 55,
+  "selected_images": 31,
+  "webp_files": 93,
+  "selected_source_bytes": 34607681,
+  "all_webp_bytes": 7853230,
+  "largest_webp_bytes": 504348,
+  "entries": [
+    {
+      "slug": "fotoliu-design",
+      "source": "56.jpg",
+      "source_width": 1662,
+      "source_height": 2048,
+      "source_bytes": 511756,
+      "variants": [
+        {
+          "file": "fotoliu-design-480.webp",
+          "requested_width": 480,
+          "width": 480,
+          "height": 591,
+          "bytes": 32134
+        },
+        {
+          "file": "fotoliu-design-900.webp",
+          "requested_width": 900,
+          "width": 900,
+          "height": 1109,
+          "bytes": 122966
+        },
+        {
+          "file": "fotoliu-design-1440.webp",
+          "requested_width": 1440,
+          "width": 1440,
+          "height": 1774,
+          "bytes": 304984
+        }
+      ]
+    },
+    {
+      "slug": "canapea-clasica",
+      "source": "photo18.jpg",
+      "source_width": 2400,
+      "source_height": 1800,
+      "source_bytes": 435892,
+      "variants": [
+        {
+          "file": "canapea-clasica-480.webp",
+          "requested_width": 480,
+          "width": 480,
+          "height": 360,
+          "bytes": 15548
+        },
+        {
+          "file": "canapea-clasica-900.webp",
+          "requested_width": 900,
+          "width": 900,
+          "height": 675,
+          "bytes": 44178
+        },
+        {
+          "file": "canapea-clasica-1440.webp",
+          "requested_width": 1440,
+          "width": 1440,
+          "height": 1080,
+          "bytes": 92610
+        }
+      ]
+    },
+    {
+      "slug": "canapea-inainte",
+      "source": "photo17.jpg",
+      "source_width": 2400,
+      "source_height": 1800,
+      "source_bytes": 331162,
+      "variants": [
+        {
+          "file": "canapea-inainte-480.webp",
+          "requested_width": 480,
+          "width": 480,
+          "height": 360,
+          "bytes": 11856
+        },
+        {
+          "file": "canapea-inainte-900.webp",
+          "requested_width": 900,
+          "width": 900,
+          "height": 675,
+          "bytes": 28984
+        },
+        {
+          "file": "canapea-inainte-1440.webp",
+          "requested_width": 1440,
+          "width": 1440,
+          "height": 1080,
+          "bytes": 57018
+        }
+      ]
+    },
+    {
+      "slug": "set-clasic",
+      "source": "photo16.jpg",
+      "source_width": 2400,
+      "source_height": 1800,
+      "source_bytes": 474238,
+      "variants": [
+        {
+          "file": "set-clasic-480.webp",
+          "requested_width": 480,
+          "width": 480,
+          "height": 360,
+          "bytes": 17204
+        },
+        {
+          "file": "set-clasic-900.webp",
+          "requested_width": 900,
+          "width": 900,
+          "height": 675,
+          "bytes": 46790
+        },
+        {
+          "file": "set-clasic-1440.webp",
+          "requested_width": 1440,
+          "width": 1440,
+          "height": 1080,
+          "bytes": 98044
+        }
+      ]
+    },
+    {
+      "slug": "fotoliu-clasic",
+      "source": "photo19.jpg",
+      "source_width": 1800,
+      "source_height": 2400,
+      "source_bytes": 411595,
+      "variants": [
+        {
+          "file": "fotoliu-clasic-480.webp",
+          "requested_width": 480,
+          "width": 480,
+          "height": 640,
+          "bytes": 21502
+        },
+        {
+          "file": "fotoliu-clasic-900.webp",
+          "requested_width": 900,
+          "width": 900,
+          "height": 1200,
+          "bytes": 60776
+        },
+        {
+          "file": "fotoliu-clasic-1440.webp",
+          "requested_width": 1440,
+          "width": 1440,
+          "height": 1920,
+          "bytes": 129444
+        }
+      ]
+    },
+    {
+      "slug": "fotoliu-inainte",
+      "source": "20.jpg",
+      "source_width": 1800,
+      "source_height": 2400,
+      "source_bytes": 389478,
+      "variants": [
+        {
+          "file": "fotoliu-inainte-480.webp",
+          "requested_width": 480,
+          "width": 480,
+          "height": 640,
+          "bytes": 18266
+        },
+        {
+          "file": "fotoliu-inainte-900.webp",
+          "requested_width": 900,
+          "width": 900,
+          "height": 1200,
+          "bytes": 51722
+        },
+        {
+          "file": "fotoliu-inainte-1440.webp",
+          "requested_width": 1440,
+          "width": 1440,
+          "height": 1920,
+          "bytes": 114426
+        }
+      ]
+    },
+    {
+      "slug": "scaune-albe",
+      "source": "22.jpg",
+      "source_width": 2400,
+      "source_height": 1350,
+      "source_bytes": 348145,
+      "variants": [
+        {
+          "file": "scaune-albe-480.webp",
+          "requested_width": 480,
+          "width": 480,
+          "height": 270,
+          "bytes": 17828
+        },
+        {
+          "file": "scaune-albe-900.webp",
+          "requested_width": 900,
+          "width": 900,
+          "height": 506,
+          "bytes": 40644
+        },
+        {
+          "file": "scaune-albe-1440.webp",
+          "requested_width": 1440,
+          "width": 1440,
+          "height": 810,
+          "bytes": 73190
+        }
+      ]
+    },
+    {
+      "slug": "scaune-inainte",
+      "source": "21.jpg",
+      "source_width": 2400,
+      "source_height": 1800,
+      "source_bytes": 567107,
+      "variants": [
+        {
+          "file": "scaune-inainte-480.webp",
+          "requested_width": 480,
+          "width": 480,
+          "height": 360,
+          "bytes": 23358
+        },
+        {
+          "file": "scaune-inainte-900.webp",
+          "requested_width": 900,
+          "width": 900,
+          "height": 675,
+          "bytes": 59932
+        },
+        {
+          "file": "scaune-inainte-1440.webp",
+          "requested_width": 1440,
+          "width": 1440,
+          "height": 1080,
+          "bytes": 125076
+        }
+      ]
+    },
+    {
+      "slug": "scaun-alb",
+      "source": "24.jpg",
+      "source_width": 1350,
+      "source_height": 2400,
+      "source_bytes": 387291,
+      "variants": [
+        {
+          "file": "scaun-alb-480.webp",
+          "requested_width": 480,
+          "width": 480,
+          "height": 853,
+          "bytes": 33914
+        },
+        {
+          "file": "scaun-alb-900.webp",
+          "requested_width": 900,
+          "width": 900,
+          "height": 1600,
+          "bytes": 92646
+        },
+        {
+          "file": "scaun-alb-1440.webp",
+          "requested_width": 1440,
+          "width": 1350,
+          "height": 2400,
+          "bytes": 174476
+        }
+      ]
+    },
+    {
+      "slug": "scaun-inainte",
+      "source": "23.jpg",
+      "source_width": 1800,
+      "source_height": 2400,
+      "source_bytes": 596927,
+      "variants": [
+        {
+          "file": "scaun-inainte-480.webp",
+          "requested_width": 480,
+          "width": 480,
+          "height": 640,
+          "bytes": 36048
+        },
+        {
+          "file": "scaun-inainte-900.webp",
+          "requested_width": 900,
+          "width": 900,
+          "height": 1200,
+          "bytes": 103324
+        },
+        {
+          "file": "scaun-inainte-1440.webp",
+          "requested_width": 1440,
+          "width": 1440,
+          "height": 1920,
+          "bytes": 213890
+        }
+      ]
+    },
+    {
+      "slug": "masa-lacuita",
+      "source": "40.jpg",
+      "source_width": 3072,
+      "source_height": 4080,
+      "source_bytes": 3684359,
+      "variants": [
+        {
+          "file": "masa-lacuita-480.webp",
+          "requested_width": 480,
+          "width": 480,
+          "height": 638,
+          "bytes": 40098
+        },
+        {
+          "file": "masa-lacuita-900.webp",
+          "requested_width": 900,
+          "width": 900,
+          "height": 1195,
+          "bytes": 131566
+        },
+        {
+          "file": "masa-lacuita-1440.webp",
+          "requested_width": 1440,
+          "width": 1440,
+          "height": 1912,
+          "bytes": 313566
+        }
+      ]
+    },
+    {
+      "slug": "masa-inainte",
+      "source": "38.jpg",
+      "source_width": 3072,
+      "source_height": 4080,
+      "source_bytes": 4760083,
+      "variants": [
+        {
+          "file": "masa-inainte-480.webp",
+          "requested_width": 480,
+          "width": 480,
+          "height": 638,
+          "bytes": 43130
+        },
+        {
+          "file": "masa-inainte-900.webp",
+          "requested_width": 900,
+          "width": 900,
+          "height": 1195,
+          "bytes": 190170
+        },
+        {
+          "file": "masa-inainte-1440.webp",
+          "requested_width": 1440,
+          "width": 1440,
+          "height": 1912,
+          "bytes": 504348
+        }
+      ]
+    },
+    {
+      "slug": "masa-lacuita-detaliu",
+      "source": "41.jpg",
+      "source_width": 3072,
+      "source_height": 4080,
+      "source_bytes": 3048133,
+      "variants": [
+        {
+          "file": "masa-lacuita-detaliu-480.webp",
+          "requested_width": 480,
+          "width": 480,
+          "height": 638,
+          "bytes": 44046
+        },
+        {
+          "file": "masa-lacuita-detaliu-900.webp",
+          "requested_width": 900,
+          "width": 900,
+          "height": 1195,
+          "bytes": 124956
+        },
+        {
+          "file": "masa-lacuita-detaliu-1440.webp",
+          "requested_width": 1440,
+          "width": 1440,
+          "height": 1912,
+          "bytes": 246464
+        }
+      ]
+    },
+    {
+      "slug": "masa-rotunda",
+      "source": "25.jpg",
+      "source_width": 1800,
+      "source_height": 2400,
+      "source_bytes": 436072,
+      "variants": [
+        {
+          "file": "masa-rotunda-480.webp",
+          "requested_width": 480,
+          "width": 480,
+          "height": 640,
+          "bytes": 26080
+        },
+        {
+          "file": "masa-rotunda-900.webp",
+          "requested_width": 900,
+          "width": 900,
+          "height": 1200,
+          "bytes": 68706
+        },
+        {
+          "file": "masa-rotunda-1440.webp",
+          "requested_width": 1440,
+          "width": 1440,
+          "height": 1920,
+          "bytes": 140426
+        }
+      ]
+    },
+    {
+      "slug": "masa-rotunda-inainte",
+      "source": "26.jpg",
+      "source_width": 1800,
+      "source_height": 2400,
+      "source_bytes": 533342,
+      "variants": [
+        {
+          "file": "masa-rotunda-inainte-480.webp",
+          "requested_width": 480,
+          "width": 480,
+          "height": 640,
+          "bytes": 30452
+        },
+        {
+          "file": "masa-rotunda-inainte-900.webp",
+          "requested_width": 900,
+          "width": 900,
+          "height": 1200,
+          "bytes": 87858
+        },
+        {
+          "file": "masa-rotunda-inainte-1440.webp",
+          "requested_width": 1440,
+          "width": 1440,
+          "height": 1920,
+          "bytes": 182788
+        }
+      ]
+    },
+    {
+      "slug": "vitrina-clasica",
+      "source": "43.jpg",
+      "source_width": 4000,
+      "source_height": 1800,
+      "source_bytes": 2295529,
+      "variants": [
+        {
+          "file": "vitrina-clasica-480.webp",
+          "requested_width": 480,
+          "width": 480,
+          "height": 216,
+          "bytes": 13590
+        },
+        {
+          "file": "vitrina-clasica-900.webp",
+          "requested_width": 900,
+          "width": 900,
+          "height": 405,
+          "bytes": 42732
+        },
+        {
+          "file": "vitrina-clasica-1440.webp",
+          "requested_width": 1440,
+          "width": 1440,
+          "height": 648,
+          "bytes": 93934
+        }
+      ]
+    },
+    {
+      "slug": "vitrina-detaliu",
+      "source": "44.jpg",
+      "source_width": 1800,
+      "source_height": 4000,
+      "source_bytes": 2560264,
+      "variants": [
+        {
+          "file": "vitrina-detaliu-480.webp",
+          "requested_width": 480,
+          "width": 480,
+          "height": 1067,
+          "bytes": 73654
+        },
+        {
+          "file": "vitrina-detaliu-900.webp",
+          "requested_width": 900,
+          "width": 900,
+          "height": 2000,
+          "bytes": 232086
+        },
+        {
+          "file": "vitrina-detaliu-1440.webp",
+          "requested_width": 1440,
+          "width": 1440,
+          "height": 3200,
+          "bytes": 463500
+        }
+      ]
+    },
+    {
+      "slug": "vitrina-ornament",
+      "source": "48.jpg",
+      "source_width": 4000,
+      "source_height": 1800,
+      "source_bytes": 2133035,
+      "variants": [
+        {
+          "file": "vitrina-ornament-480.webp",
+          "requested_width": 480,
+          "width": 480,
+          "height": 216,
+          "bytes": 13068
+        },
+        {
+          "file": "vitrina-ornament-900.webp",
+          "requested_width": 900,
+          "width": 900,
+          "height": 405,
+          "bytes": 35016
+        },
+        {
+          "file": "vitrina-ornament-1440.webp",
+          "requested_width": 1440,
+          "width": 1440,
+          "height": 648,
+          "bytes": 71648
+        }
+      ]
+    },
+    {
+      "slug": "dormitor-alb",
+      "source": "36.jpg",
+      "source_width": 3072,
+      "source_height": 4080,
+      "source_bytes": 2235602,
+      "variants": [
+        {
+          "file": "dormitor-alb-480.webp",
+          "requested_width": 480,
+          "width": 480,
+          "height": 638,
+          "bytes": 19270
+        },
+        {
+          "file": "dormitor-alb-900.webp",
+          "requested_width": 900,
+          "width": 900,
+          "height": 1195,
+          "bytes": 56736
+        },
+        {
+          "file": "dormitor-alb-1440.webp",
+          "requested_width": 1440,
+          "width": 1440,
+          "height": 1912,
+          "bytes": 123822
+        }
+      ]
+    },
+    {
+      "slug": "dulap-alb",
+      "source": "35.jpg",
+      "source_width": 3072,
+      "source_height": 4080,
+      "source_bytes": 2696016,
+      "variants": [
+        {
+          "file": "dulap-alb-480.webp",
+          "requested_width": 480,
+          "width": 480,
+          "height": 638,
+          "bytes": 24876
+        },
+        {
+          "file": "dulap-alb-900.webp",
+          "requested_width": 900,
+          "width": 900,
+          "height": 1195,
+          "bytes": 71178
+        },
+        {
+          "file": "dulap-alb-1440.webp",
+          "requested_width": 1440,
+          "width": 1440,
+          "height": 1912,
+          "bytes": 154986
+        }
+      ]
+    },
+    {
+      "slug": "comoda-alba",
+      "source": "37.jpg",
+      "source_width": 3072,
+      "source_height": 4080,
+      "source_bytes": 2721067,
+      "variants": [
+        {
+          "file": "comoda-alba-480.webp",
+          "requested_width": 480,
+          "width": 480,
+          "height": 638,
+          "bytes": 28790
+        },
+        {
+          "file": "comoda-alba-900.webp",
+          "requested_width": 900,
+          "width": 900,
+          "height": 1195,
+          "bytes": 90406
+        },
+        {
+          "file": "comoda-alba-1440.webp",
+          "requested_width": 1440,
+          "width": 1440,
+          "height": 1912,
+          "bytes": 198464
+        }
+      ]
+    },
+    {
+      "slug": "pat-clasic",
+      "source": "50.jpg",
+      "source_width": 1920,
+      "source_height": 1920,
+      "source_bytes": 132741,
+      "variants": [
+        {
+          "file": "pat-clasic-480.webp",
+          "requested_width": 480,
+          "width": 480,
+          "height": 480,
+          "bytes": 9544
+        },
+        {
+          "file": "pat-clasic-900.webp",
+          "requested_width": 900,
+          "width": 900,
+          "height": 900,
+          "bytes": 24584
+        },
+        {
+          "file": "pat-clasic-1440.webp",
+          "requested_width": 1440,
+          "width": 1440,
+          "height": 1440,
+          "bytes": 51608
+        }
+      ]
+    },
+    {
+      "slug": "tablie-pat",
+      "source": "49.jpg",
+      "source_width": 1920,
+      "source_height": 1920,
+      "source_bytes": 239273,
+      "variants": [
+        {
+          "file": "tablie-pat-480.webp",
+          "requested_width": 480,
+          "width": 480,
+          "height": 480,
+          "bytes": 21854
+        },
+        {
+          "file": "tablie-pat-900.webp",
+          "requested_width": 900,
+          "width": 900,
+          "height": 900,
+          "bytes": 57406
+        },
+        {
+          "file": "tablie-pat-1440.webp",
+          "requested_width": 1440,
+          "width": 1440,
+          "height": 1440,
+          "bytes": 119988
+        }
+      ]
+    },
+    {
+      "slug": "ornament-restaurat",
+      "source": "52.jpg",
+      "source_width": 1920,
+      "source_height": 1920,
+      "source_bytes": 496301,
+      "variants": [
+        {
+          "file": "ornament-restaurat-480.webp",
+          "requested_width": 480,
+          "width": 480,
+          "height": 480,
+          "bytes": 16432
+        },
+        {
+          "file": "ornament-restaurat-900.webp",
+          "requested_width": 900,
+          "width": 900,
+          "height": 900,
+          "bytes": 44556
+        },
+        {
+          "file": "ornament-restaurat-1440.webp",
+          "requested_width": 1440,
+          "width": 1440,
+          "height": 1440,
+          "bytes": 96118
+        }
+      ]
+    },
+    {
+      "slug": "ornament-inainte",
+      "source": "53.jpg",
+      "source_width": 1920,
+      "source_height": 1920,
+      "source_bytes": 466736,
+      "variants": [
+        {
+          "file": "ornament-inainte-480.webp",
+          "requested_width": 480,
+          "width": 480,
+          "height": 480,
+          "bytes": 26350
+        },
+        {
+          "file": "ornament-inainte-900.webp",
+          "requested_width": 900,
+          "width": 900,
+          "height": 900,
+          "bytes": 80030
+        },
+        {
+          "file": "ornament-inainte-1440.webp",
+          "requested_width": 1440,
+          "width": 1440,
+          "height": 1440,
+          "bytes": 165182
+        }
+      ]
+    },
+    {
+      "slug": "canapea-piele",
+      "source": "28.jpg",
+      "source_width": 2400,
+      "source_height": 1350,
+      "source_bytes": 405493,
+      "variants": [
+        {
+          "file": "canapea-piele-480.webp",
+          "requested_width": 480,
+          "width": 480,
+          "height": 270,
+          "bytes": 14668
+        },
+        {
+          "file": "canapea-piele-900.webp",
+          "requested_width": 900,
+          "width": 900,
+          "height": 506,
+          "bytes": 50702
+        },
+        {
+          "file": "canapea-piele-1440.webp",
+          "requested_width": 1440,
+          "width": 1440,
+          "height": 810,
+          "bytes": 105476
+        }
+      ]
+    },
+    {
+      "slug": "masa-alba",
+      "source": "photo9.jpg",
+      "source_width": 2400,
+      "source_height": 1080,
+      "source_bytes": 343618,
+      "variants": [
+        {
+          "file": "masa-alba-480.webp",
+          "requested_width": 480,
+          "width": 480,
+          "height": 216,
+          "bytes": 7284
+        },
+        {
+          "file": "masa-alba-900.webp",
+          "requested_width": 900,
+          "width": 900,
+          "height": 405,
+          "bytes": 19248
+        },
+        {
+          "file": "masa-alba-1440.webp",
+          "requested_width": 1440,
+          "width": 1440,
+          "height": 648,
+          "bytes": 45822
+        }
+      ]
+    },
+    {
+      "slug": "biblioteca-alba",
+      "source": "photo7.jpg",
+      "source_width": 2400,
+      "source_height": 1080,
+      "source_bytes": 255101,
+      "variants": [
+        {
+          "file": "biblioteca-alba-480.webp",
+          "requested_width": 480,
+          "width": 480,
+          "height": 216,
+          "bytes": 9970
+        },
+        {
+          "file": "biblioteca-alba-900.webp",
+          "requested_width": 900,
+          "width": 900,
+          "height": 405,
+          "bytes": 23800
+        },
+        {
+          "file": "biblioteca-alba-1440.webp",
+          "requested_width": 1440,
+          "width": 1440,
+          "height": 648,
+          "bytes": 46708
+        }
+      ]
+    },
+    {
+      "slug": "scaun-retapitat",
+      "source": "photo14.jpg",
+      "source_width": 1350,
+      "source_height": 2400,
+      "source_bytes": 266651,
+      "variants": [
+        {
+          "file": "scaun-retapitat-480.webp",
+          "requested_width": 480,
+          "width": 480,
+          "height": 853,
+          "bytes": 17696
+        },
+        {
+          "file": "scaun-retapitat-900.webp",
+          "requested_width": 900,
+          "width": 900,
+          "height": 1600,
+          "bytes": 56604
+        },
+        {
+          "file": "scaun-retapitat-1440.webp",
+          "requested_width": 1440,
+          "width": 1350,
+          "height": 2400,
+          "bytes": 116572
+        }
+      ]
+    },
+    {
+      "slug": "scaun-cadru",
+      "source": "photo13.jpg",
+      "source_width": 1350,
+      "source_height": 2400,
+      "source_bytes": 305853,
+      "variants": [
+        {
+          "file": "scaun-cadru-480.webp",
+          "requested_width": 480,
+          "width": 480,
+          "height": 853,
+          "bytes": 29072
+        },
+        {
+          "file": "scaun-cadru-900.webp",
+          "requested_width": 900,
+          "width": 900,
+          "height": 1600,
+          "bytes": 73078
+        },
+        {
+          "file": "scaun-cadru-1440.webp",
+          "requested_width": 1440,
+          "width": 1350,
+          "height": 2400,
+          "bytes": 135316
+        }
+      ]
+    },
+    {
+      "slug": "fotoliu-design-inainte",
+      "source": "55.jpg",
+      "source_width": 1167,
+      "source_height": 1341,
+      "source_bytes": 138821,
+      "variants": [
+        {
+          "file": "fotoliu-design-inainte-480.webp",
+          "requested_width": 480,
+          "width": 480,
+          "height": 552,
+          "bytes": 19920
+        },
+        {
+          "file": "fotoliu-design-inainte-900.webp",
+          "requested_width": 900,
+          "width": 900,
+          "height": 1034,
+          "bytes": 49404
+        },
+        {
+          "file": "fotoliu-design-inainte-1440.webp",
+          "requested_width": 1440,
+          "width": 1167,
+          "height": 1341,
+          "bytes": 73050
+        }
+      ]
+    }
+  ],
+  "og_cover": {
+    "file": "og-cover.jpg",
+    "width": 1200,
+    "height": 630,
+    "bytes": 95465
+  }
+}

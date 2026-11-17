@@ -1,0 +1,7 @@
+node_modules/
+/images/
+.vercel/
+.DS_Store
+qa/
+contact-sheet.jpg
+image-inventory.json

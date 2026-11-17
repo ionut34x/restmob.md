@@ -109,6 +109,8 @@ function render(lang) {
   <link rel="stylesheet" href="${css}">
   <script type="application/ld+json">${schema(lang, t, url)}</script>
   <script src="${js}" defer></script>
+  <script>window.si=window.si||function(){(window.siq=window.siq||[]).push(arguments);};</script>
+  <script defer src="/_vercel/speed-insights/script.js"></script>
 </head>
 <body id="sus">
   <a class="skip-link" href="#continut">${t.skip}</a>

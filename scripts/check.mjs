@@ -135,6 +135,8 @@ for (const [lang, relative] of [['ro', 'index.html'], ['ru', 'ru/index.html']]) 
     verify(resources.length > 0, `${label}: missing ${extension} resource`);
     for (const element of resources) {
       const url = element.attrs[attribute];
+      // Skip Vercel Speed Insights script (served by Vercel platform at runtime)
+      if (url === '/_vercel/speed-insights/script.js') continue;
       const hash = url.match(new RegExp(`\\.([a-f0-9]{10})\\.${extension}$`))?.[1];
       verify(Boolean(hash), `${label}: ${extension} must have a fingerprinted filename: ${url}`);
       const asset = path.join(publicDir, url.replace(/^\//, ''));
@@ -153,6 +155,7 @@ for (const page of pages) {
       const reference = element.attrs[key];
       if (!reference || /^(?:tel:|mailto:|viber:|data:|javascript:)/i.test(reference)) continue;
       let url;
+      if (reference === '/_vercel/speed-insights/script.js') continue;
       try { url = new URL(reference, page.pageUrl); }
       catch { verify(false, `${page.lang}: invalid ${key} URL ${reference}`); continue; }
       if (url.origin !== origin) continue;

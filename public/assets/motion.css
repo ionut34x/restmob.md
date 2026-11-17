@@ -1,0 +1,189 @@
+/* RESTMOB motion: a finishing pass, a maker's stamp and drawn workshop details.
+   Every enhancement is optional; the unanimated page stays fully visible. */
+
+.motion-ready .hero-visual::before,
+.motion-ready .hero-visual::after {
+  position: absolute;
+  pointer-events: none;
+  content: '';
+}
+
+/* Four fine edges are traced around the photograph, like a measured frame. */
+.motion-ready .hero-visual::before {
+  z-index: 2;
+  inset: 12px;
+  border-radius: 1px;
+  background:
+    linear-gradient(#fffaf0, #fffaf0) left top / 100% 1px no-repeat,
+    linear-gradient(#fffaf0, #fffaf0) right top / 1px 100% no-repeat,
+    linear-gradient(#fffaf0, #fffaf0) right bottom / 100% 1px no-repeat,
+    linear-gradient(#fffaf0, #fffaf0) left bottom / 1px 100% no-repeat;
+  opacity: .65;
+}
+
+/* A translucent warm coat passes over the image; the image itself stays painted. */
+.motion-ready .hero-visual::after {
+  z-index: 1;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(112deg,
+    rgb(246 243 236 / 0%) 8%,
+    rgb(246 243 236 / 12%) 28%,
+    rgb(234 218 192 / 62%) 52%,
+    rgb(255 250 240 / 75%) 64%,
+    rgb(246 243 236 / 0%) 85%);
+  opacity: 0;
+}
+
+.motion-ready .hero-visual figcaption { z-index: 3; }
+.motion-ready .hero-seal { z-index: 4; }
+.motion-ready:not(.motion-intro-done) .hero-visual::after {
+  animation: restmob-finishing-pass 1500ms cubic-bezier(.2, .7, .3, 1) 100ms both;
+}
+.motion-ready:not(.motion-intro-done) .hero-visual::before {
+  animation: restmob-frame-trace 1550ms cubic-bezier(.35, .2, .25, 1) 180ms both;
+}
+.motion-ready:not(.motion-intro-done) .hero-seal {
+  animation: restmob-makers-stamp 1050ms cubic-bezier(.22, .8, .22, 1) 180ms both;
+}
+.motion-ready:not(.motion-intro-done) .hero h1 {
+  animation: restmob-title-unfold 850ms cubic-bezier(.2, .7, .25, 1) 80ms both;
+}
+
+/* Draw the existing furniture outlines only as their cards appear. */
+.motion-ready .service-card.is-visible .service-top svg path,
+.motion-ready .service-card.is-visible .service-top svg circle {
+  animation: restmob-tool-outline 1250ms ease-out 100ms both;
+}
+.motion-ready .service-card:nth-child(2) .service-top svg path { animation-delay: 190ms; }
+.motion-ready .service-card:nth-child(3) .service-top svg path { animation-delay: 280ms; }
+
+/* The process line extends like a carpenter's pencil mark, without shifting text. */
+.motion-ready .process-grid article[data-reveal] {
+  position: relative;
+  border-top-color: transparent;
+}
+.motion-ready .process-grid article[data-reveal]::before {
+  position: absolute;
+  top: -1px;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background: #a7ae9c;
+  pointer-events: none;
+  transform-origin: left center;
+  content: '';
+}
+.motion-ready .process-grid article.is-visible::before {
+  animation: restmob-measured-line 850ms cubic-bezier(.25, .65, .25, 1) 100ms both;
+}
+.motion-ready .process-grid article:nth-child(2).is-visible::before { animation-delay: 200ms; }
+.motion-ready .process-grid article:nth-child(3).is-visible::before { animation-delay: 300ms; }
+.motion-ready .is-demoing .compare-handle > span {
+  border-color: #fffaf1;
+  box-shadow: 0 0 0 6px rgb(246 243 236 / 22%), 0 2px 15px rgb(0 0 0 / 12%);
+}
+
+@keyframes restmob-finishing-pass {
+  0% { opacity: 0; clip-path: inset(0 92% 0 0); }
+  16% { opacity: .88; }
+  35% { opacity: .88; clip-path: inset(0 35% 0 3%); }
+  70% { opacity: .7; clip-path: inset(0 0 0 52%); }
+  100% { opacity: 0; clip-path: inset(0 0 0 100%); }
+}
+
+@keyframes restmob-frame-trace {
+  0% { background-size: 0% 1px, 1px 0%, 0% 1px, 1px 0%; opacity: .25; }
+  25% { background-size: 100% 1px, 1px 0%, 0% 1px, 1px 0%; }
+  50% { background-size: 100% 1px, 1px 100%, 0% 1px, 1px 0%; }
+  75% { background-size: 100% 1px, 1px 100%, 100% 1px, 1px 0%; }
+  100% { background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%; opacity: .65; }
+}
+
+@keyframes restmob-makers-stamp {
+  0% { opacity: .7; transform: translateY(-5px) rotate(-8deg) scale(.94); }
+  72% { opacity: 1; transform: translateY(0) rotate(1.5deg) scale(1.01); }
+  100% { opacity: 1; transform: none; }
+}
+
+@keyframes restmob-title-unfold {
+  from { opacity: .65; clip-path: inset(0 0 5% 0); transform: translateY(9px); }
+  to { opacity: 1; clip-path: inset(0); transform: none; }
+}
+
+@keyframes restmob-tool-outline {
+  from { stroke-dasharray: 1; stroke-dashoffset: 1; }
+  to { stroke-dasharray: 1; stroke-dashoffset: 0; }
+}
+
+@keyframes restmob-measured-line {
+  from { transform: scaleX(.04); opacity: .35; }
+  to { transform: scaleX(1); opacity: 1; }
+}
+
+/* A single brush pass restores the header wordmark without hiding its text. */
+.brand-restored { position: relative; isolation: isolate; overflow: hidden; }
+.logo-brush { display: none; position: absolute; z-index: 2; left: 0; top: 0; width: 27px; height: 27px; pointer-events: none; opacity: 0; }
+.motion-ready:not(.motion-intro-done) .brand-restored::before {
+  position: absolute; z-index: 1; inset: 4px 0 2px; pointer-events: none; content: '';
+  background: radial-gradient(ellipse at 18% 35%, #b5a084 0 9%, transparent 29%), radial-gradient(ellipse at 65% 65%, #bea98a 0 8%, transparent 30%), linear-gradient(175deg, transparent 22%, #cfbea0 49%, transparent 75%);
+  opacity: .45;
+  animation: restmob-dust-wipe 1100ms ease-in-out 140ms both;
+}
+.motion-ready:not(.motion-intro-done) .logo-brush { display: block; animation: restmob-logo-brush 1100ms ease-in-out 140ms both; }
+@keyframes restmob-dust-wipe {
+  0%, 8% { clip-path: inset(0); }
+  88%, 100% { clip-path: inset(0 0 0 100%); }
+}
+@keyframes restmob-logo-brush {
+  0% { left: -12px; opacity: 0; transform: rotate(-12deg); }
+  12% { opacity: 1; }
+  82% { left: calc(100% - 19px); opacity: 1; transform: rotate(7deg); }
+  100% { left: 100%; opacity: 0; transform: rotate(7deg); }
+}
+
+/* A short seam is drawn under the hero button on hover or keyboard focus. */
+.button-stitch { position: relative; }
+.button-stitch::before { position: absolute; right: 19px; bottom: 7px; left: 19px; height: 2px; pointer-events: none; content: ''; background: repeating-linear-gradient(90deg, currentColor 0 4px, transparent 4px 9px); opacity: .7; clip-path: inset(0 100% 0 0); transition: clip-path 550ms steps(24, end); }
+.button-stitch::after { position: absolute; left: 17px; bottom: 9px; width: 13px; height: 1px; background: currentColor; pointer-events: none; content: ''; opacity: 0; transform: rotate(-35deg); }
+.button-stitch:is(:hover, :focus-visible)::before { clip-path: inset(0); }
+.motion-ready .button-stitch:is(:hover, :focus-visible)::after { animation: restmob-sewing-needle 550ms linear both; }
+@keyframes restmob-sewing-needle {
+  0% { left: 17px; opacity: 0; }
+  10%, 85% { opacity: .9; }
+  100% { left: calc(100% - 30px); opacity: 0; }
+}
+
+/* Native details remain usable without JavaScript; each front has a small pull. */
+.faq-list { border-top: 0; }
+.faq-list .faq-drawer { margin-bottom: 10px; border: 1px solid #c9c7b6; border-radius: 2px; background: linear-gradient(100deg, rgb(235 225 206 / 28%), rgb(255 253 246 / 45%)); box-shadow: 0 2px 0 rgb(61 58 42 / 4%); }
+.faq-list .faq-drawer summary { padding: 18px 22px; gap: 18px; }
+.faq-list .faq-drawer summary > .drawer-handle { display: block; width: 46px; height: 27px; flex: 0 0 46px; color: #8e7254; transform: none; transition: transform .25s; }
+.drawer-handle svg { display: block; width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; }
+.faq-list .faq-drawer[open] { border-color: #b4af98; background: #f0eadf; }
+.faq-list .faq-drawer[open] summary > .drawer-handle { transform: translateY(3px); }
+.drawer-content { overflow: hidden; }
+.drawer-content > p { max-width: 600px; padding: 0 22px 24px; color: var(--muted); font: 17px/1.8 var(--serif); }
+.motion-ready .faq-drawer[open] .drawer-content { animation: restmob-drawer-open 340ms cubic-bezier(.2, .7, .3, 1) both; }
+@keyframes restmob-drawer-open {
+  from { opacity: .55; transform: translateY(-9px); }
+  to { opacity: 1; transform: none; }
+}
+@media (max-width: 640px) {
+  .faq-list .faq-drawer summary { padding: 16px; gap: 12px; }
+  .faq-list .faq-drawer summary > .drawer-handle { width: 38px; flex-basis: 38px; }
+  .drawer-content > p { padding: 0 16px 20px; font-size: 16px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brand-restored::before, .logo-brush, .button-stitch::after { display: none !important; }
+  .button-stitch::before, .drawer-handle { transition: none !important; }
+  .faq-drawer .drawer-content { animation: none !important; }
+  .hero-visual::before,
+  .hero-visual::after { display: none !important; }
+  .motion-ready .hero h1,
+  .motion-ready .hero-seal,
+  .motion-ready .service-top svg path,
+  .motion-ready .service-top svg circle,
+  .motion-ready .process-grid article::before { animation: none !important; }
+}

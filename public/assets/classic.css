@@ -1,0 +1,188 @@
+/* RESTMOB — a readable, classical atelier theme. Bundled with style.css. */
+:root {
+  --serif: 'Palatino Linotype', 'Book Antiqua', Palatino, Georgia, serif;
+  --sans: Georgia, 'Times New Roman', serif;
+  --muted: #596151;
+}
+
+body { font-size: 18px; line-height: 1.75; }
+h1, h2 { letter-spacing: -.025em; line-height: 1.13; }
+h3 { letter-spacing: -.01em; }
+.eyebrow { font-size: 12px; letter-spacing: .13em; font-weight: 400; }
+.brand-name { font-family: var(--serif); font-size: 31px; font-weight: 600; letter-spacing: .045em; }
+.brand-tagline { font-size: 9px; font-weight: 400; letter-spacing: .12em; }
+#main-nav a { font-size: 16px; }
+.language-switch { font-size: 12px; }
+.header-call { font-size: 14px; min-height: 46px; }
+.button, .text-link { font-size: 16px; font-weight: 400; }
+.button { min-height: 56px; padding-block: 15px; }
+.hero { gap: 56px; }
+.hero h1 { font-size: clamp(58px, 5.15vw, 76px); }
+.hero-copy .eyebrow { font-size: 12px; }
+.hero-intro { max-width: 460px; font-size: 18px; line-height: 1.85; }
+.hero-secondary { font-size: 16px; }
+.hero-materials { font-size: 13px; }
+.hero-visual figcaption { min-height: 84px; font-size: 18px; }
+.hero-visual figcaption small { font-size: 10px; }
+.hero-seal span { font-size: 8px; }
+.trust-strip strong { font-size: 16px; font-weight: 400; }
+.trust-strip small { font-size: 14px; }
+.section-intro { max-width: 380px; font-size: 17px; line-height: 1.8; }
+.service-card h3 { max-width: 320px; font-size: 29px; }
+.service-card > p { font-size: 16px; line-height: 1.8; }
+.service-link { font-size: 14px; min-height: 60px; }
+.service-top > span, .work-index { font-size: 12px; }
+.comparison-tabs button, .gallery-filters button { font-size: 15px; min-height: 48px; padding: 12px 20px; }
+.comparison-caption h3 { font-size: 28px; }
+.comparison-caption p { font-size: 16px; line-height: 1.8; }
+.comparison-panel--portrait .comparison-caption h3 { font-size: 32px; }
+.comparison-panel--portrait .comparison-caption p { font-size: 17px; }
+.compare-instruction { font-size: 13px; }
+.compare-label { font-size: 13px; min-height: 35px; }
+.gallery-caption h3 { font-family: var(--serif); font-size: 18px; line-height: 1.5; }
+.gallery-caption > span { font-size: 12px; }
+.gallery-status { font-size: 14px; }
+.about-copy > p:not(.eyebrow) { max-width: 470px; font-size: 17px; line-height: 1.85; }
+.about-note > p { max-width: 420px; font-size: 16px; line-height: 1.8; }
+.about-detail > span { font-size: 8px; }
+.process-grid h3 { font-size: 28px; }
+.process-grid p { max-width: 340px; font-size: 16px; line-height: 1.8; }
+.step-number { font-size: 35px; }
+.faq-list summary { font-size: 19px; min-height: 85px; }
+.faq-list details > p { font-size: 17px; line-height: 1.8; }
+.contact-intro { max-width: 470px; font-size: 18px; line-height: 1.8; }
+.contact-buttons .button { font-size: 15px; min-height: 56px; }
+.contact-details { min-width: 0; }
+.contact-details .eyebrow { font-size: 12px; }
+.phone-number { padding-block: 10px; border-bottom: 1px solid #738068; font-size: clamp(38px, 3.6vw, 52px); letter-spacing: .025em; white-space: nowrap; font-variant-numeric: lining-nums tabular-nums; }
+.contact-location { font-size: 15px; }
+.contact-languages { font-size: 13px; }
+.contact-decoration { opacity: .55; pointer-events: none; }
+.footer-tagline { font-size: 14px; }
+.back-top { font-size: 14px; }
+.footer-bottom { font-size: 12px; }
+#lightbox-caption { font-family: var(--serif); font-size: 17px; }
+
+@media (max-width: 1180px) {
+  .header-inner { gap: 18px; }
+  #main-nav { gap: 17px; }
+  #main-nav a { font-size: 15px; }
+  .hero h1 { font-size: clamp(50px, 5.3vw, 66px); }
+  .hero-copy .eyebrow { font-size: 11px; }
+  .hero { gap: 38px; }
+}
+
+@media (max-width: 960px) {
+  .header-inner { column-gap: 16px; }
+  .brand-name { font-size: 29px; }
+  .brand-tagline { font-size: 8px; }
+  #main-nav a { font-size: 18px; }
+  .hero { gap: 32px; align-items: stretch; }
+  .hero h1 { font-size: clamp(42px, 5.5vw, 55px); }
+  .hero-copy .eyebrow { font-size: 10px; }
+  .hero-intro { font-size: 16px; line-height: 1.8; }
+  .hero-copy .button { font-size: 15px; min-height: 54px; padding-inline: 16px; }
+  .hero-secondary { font-size: 15px; }
+  .hero-materials { font-size: 12px; }
+  .hero-visual figcaption { font-size: 16px; padding: 12px; }
+  .hero-visual figcaption small { font-size: 9px; }
+  .hero-seal span { font-size: 7px; }
+  .trust-strip strong { font-size: 15px; }
+  .trust-strip small { font-size: 12px; }
+  .section-intro { max-width: 330px; font-size: 16px; }
+  .service-card { padding-inline: 20px; }
+  .service-card h3 { font-size: 26px; }
+  .service-card > p { font-size: 15px; }
+  .service-link { font-size: 13px; }
+  .about-copy > p:not(.eyebrow) { font-size: 16px; }
+  .about-note > p { font-size: 15px; }
+  .process-grid h3 { font-size: 25px; }
+  .process-grid p { font-size: 15px; }
+  .faq-list summary { font-size: 17px; }
+  .faq-list details > p { font-size: 16px; }
+  .contact-intro { font-size: 17px; }
+  .contact-buttons .button { min-width: 230px; font-size: 14px; }
+  .phone-number { font-size: 38px; }
+  .contact-location { font-size: 14px; }
+  .contact-languages { font-size: 12px; }
+  .contact-decoration { display: none; }
+}
+
+@media (max-width: 800px) and (min-width: 641px) {
+  .section-heading { display: block; }
+  .section-intro { max-width: 570px; margin-top: 22px; }
+  .services-grid { grid-template-columns: 1fr; }
+  .service-card { display: grid; grid-template-columns: 58px minmax(0, 1fr); gap: 0 22px; padding: 28px; }
+  .service-top { grid-row: 1 / 4; flex-direction: column; margin-bottom: 0; gap: 24px; }
+  .service-card h3 { max-width: none; }
+  .service-card > p, .service-link { grid-column: 2; }
+  .service-link { padding-top: 18px; }
+  .process-section .section-heading > a { margin-top: 15px; }
+  .about-grid { gap: 38px; }
+}
+
+@media (max-width: 640px) {
+  body { font-size: 17px; }
+  .brand-name { font-size: 27px; letter-spacing: .025em; }
+  .brand-tagline { font-size: 8px; letter-spacing: .06em; }
+  .language-switch { font-size: 11px; }
+  .hero { gap: 37px; }
+  .hero h1 { font-size: clamp(43px, 10vw, 60px); line-height: 1.12; letter-spacing: -.025em; }
+  .hero-copy .eyebrow { font-size: 10px; letter-spacing: .09em; }
+  .hero-intro { font-size: 17px; line-height: 1.8; }
+  .hero-copy .button { font-size: 15px; }
+  .hero-secondary { font-size: 15px; }
+  .hero-materials { font-size: 12px; }
+  .hero-visual figcaption { font-size: 16px; }
+  .hero-visual figcaption small { font-size: 9px; }
+  .hero-seal span { font-size: 7px; }
+  .trust-strip strong { font-size: 16px; }
+  .trust-strip small { font-size: 13px; }
+  .section-intro { max-width: 100%; font-size: 17px; }
+  .eyebrow { font-size: 11px; }
+  .service-card h3 { font-size: 29px; }
+  .service-card > p { font-size: 16px; }
+  .service-link { font-size: 14px; }
+  .comparison-tabs button, .gallery-filters button { font-size: 14px; padding: 11px 14px; }
+  .comparison-caption h3, .comparison-panel--portrait .comparison-caption h3 { font-size: 27px; }
+  .comparison-caption p, .comparison-panel--portrait .comparison-caption p { font-size: 16px; }
+  .comparison-caption > div { grid-template-columns: 22px minmax(0, 1fr); }
+  .compare-instruction { font-size: 12px; white-space: normal; }
+  .compare-label { font-size: 12px; }
+  .gallery-caption h3 { font-size: 18px; }
+  .about-copy > p:not(.eyebrow) { font-size: 17px; }
+  .about-note > p { font-size: 16px; }
+  .about-detail > span { font-size: 7px; }
+  .process-grid h3 { font-size: 28px; }
+  .process-grid p { font-size: 16px; }
+  .faq-list summary { font-size: 18px; }
+  .faq-list details > p { font-size: 16px; }
+  .contact-intro { font-size: 17px; }
+  .contact-buttons .button { min-width: 0; font-size: 14px; padding-inline: 16px; }
+  .phone-number { font-size: 44px; }
+  .contact-location { font-size: 14px; }
+  .contact-languages { font-size: 13px; }
+  .footer-top { flex-wrap: wrap; }
+  .footer-top .brand-name { font-size: 28px; }
+  .footer-tagline { max-width: 210px; font-size: 13px; }
+  .back-top { font-size: 13px; }
+  .footer-bottom { font-size: 11px; }
+  #lightbox-caption { font-size: 16px; }
+}
+
+@media (max-width: 380px) {
+  .header-inner { column-gap: 6px; }
+  .brand-name { font-size: 25px; }
+  .brand-tagline { font-size: 7px; }
+  .header-actions { gap: 3px; }
+  .language-switch { font-size: 10px; gap: 4px; }
+  .header-call { width: 32px; }
+  #menu-toggle { width: 32px; padding-inline: 5px; }
+  .hero h1 { font-size: 43px; }
+  .hero-copy .eyebrow { font-size: 9px; }
+  .hero-copy .button { max-width: 100%; gap: 13px; padding-inline: 15px; font-size: 14px; }
+  .hero-secondary { font-size: 14px; }
+  .hero-visual figcaption { font-size: 14px; padding: 10px; }
+  .phone-number { font-size: 38px; }
+  .contact-buttons .button { min-width: 210px; }
+}
